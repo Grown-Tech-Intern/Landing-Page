@@ -4,10 +4,8 @@ import { MeviEcosystemItems } from './MeviEcosystemItems'
 
 function MeviEcosystem() {
     return (
-        <S.ContainerMeviEcosystem>
+        <S.ContainerMeviEcosystem id="meviecosystem">
             <S.Ecosystem>
-                {/* <div></div> */}
-
                 <div className="content">
                     <div className="content-ecosystem">
                         <h3>MEVI ECOSYSTEM</h3>

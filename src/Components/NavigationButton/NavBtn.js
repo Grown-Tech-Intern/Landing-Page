@@ -5,8 +5,14 @@ function NavBtn( ) {
     return (
         <S.ContainerNavigationButton>
             <S.NavigationButton>
+                {/* MEVI ECOSYSTEM */}
+                <a href="#meviecosystem">
+                    <div className="nav-btn" >
+                        <div className="nav-items nav_mevishop"><p>MEVI ECOSYSTEM</p></div>
+                    </div>
+                </a>
                 {/* MEVI SHOP */}
-                <a href="#mevishop" className='contain'>
+                <a href="#mevishop">
                     <div className="nav-btn" >
                         <div className="nav-items nav_mevishop"><p>MEVI SHOP</p></div>
                     </div>
@@ -30,9 +36,13 @@ function NavBtn( ) {
                         <div className="nav-items nav_mevifactory"><p>MEVI FACTORY</p></div>
                     </div>
                 </a>
-
+                {/* MEVI PLATFORM */}
+                <a href="#meviplatform">
+                    <div className="nav-btn" >
+                        <div className="nav-items nav_mevishop"><p>MEVI PALTFORM</p></div>
+                    </div>
+                </a>
             </S.NavigationButton>
-
         </S.ContainerNavigationButton>
 
     )

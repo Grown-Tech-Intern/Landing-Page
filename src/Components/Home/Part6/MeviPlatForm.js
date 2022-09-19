@@ -4,7 +4,7 @@ import meviPlatFormLogo from '../../../assets/meviPlatFormLogo.png'
 
 function MeviPlatForm() {
     return (
-        <S.ContainerPlatForm>
+        <S.ContainerPlatForm id="meviplatform">
             <S.PlatForm>
                 <div className="mevi-platform_img">
                     <img src={meviPlatFormLogo} alt="" />

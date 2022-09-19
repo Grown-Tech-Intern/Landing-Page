@@ -1,5 +1,5 @@
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+// import { Routes, Route } from 'react-router-dom';
 import Footer from './Components/Footer/Footer';
 import Header from './Components/Header';
 import MeviEcosystem from './Components/Home/Part1/MeviEcosystem';

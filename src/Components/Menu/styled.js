@@ -1,35 +1,13 @@
-import styled, {keyframes } from "styled-components";
+import styled from "styled-components";
 
-export const ContainerMenu = styled.div `
+export const ContainerMenu = styled.div`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
 `
 
-const animationOut = keyframes`
-    from {
-    width: 0;
-    opacity: 0;
-    }
-
-    to {
-    width: 100%;
-    opacity: 1;
-    }
-`
-const animationIn = keyframes`
-    from {
-    width: 0;
-    opacity: 1;
-    }
-
-    to {
-    opacity: 0;
-    }
-`
-
-export const Menu = styled.div `
+export const Menu = styled.div`
     width: 100%;
     height: 1024px;
     position: fixed;
@@ -74,70 +52,60 @@ export const Menu = styled.div `
         }
 
         .mevi-item {
+            padding-left: 0;
             padding-top: 65px;
             display: grid;
-            margin-left: -27px;
-            p {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            li {
                 font-weight: 600;
                 font-size: 32px;
                 line-height: 39px;
-
+                padding-top: 6px;
                 a {
                     text-decoration: none;
                     color: #fff;
+                    position: relative;
                 }
 
-            }
-
-            .item {
-                padding: 8px 0;
-                display: inline-block;
-                margin: auto;
-                .line {
-                    animation: ${animationIn};
-                    animation-duration: 2s;
-                    animation-fill-mode: forwards;
-                    margin-top: -20px;
-                    /* width: 0; */
+                a::after {
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 0.175rem;
+                    left: 0;
+                    bottom: 0;
+                    transform: scale(0, 1);
+                    transition: transform 0.3s ease;
                 }
-            }
 
-            .item:hover > .line {
-                border: 2.5px solid red;
-                 // Animation;
-                animation: ${animationOut};
-                animation-duration: 2s;
-                animation-fill-mode: backwards;
+                a:hover::after {
+                    transform: scale(1, 1); 
+                }
+
+                .underline-1::after {
+                    background: #37663F;
+                }
+
+                .underline-2::after {
+                    background: #385F8F;
+                }
+
+                .underline-3::after {
+                    background: #037A16;
+                }
+
+                .underline-4::after {
+                    background: #FE8333;
+                }
+
+                .underline-5::after {
+                    background: #46037A;
+                }
+
             }
             
-            .underline-1 {
-                /* background: #37663F; */
-                border: 2.5px solid #37663F;
-            }
-           
-
-                .underline-2 {
-                    /* background: #385F8F; */
-                    border: 2.5px solid #385F8F;
-                }
-
-                .underline-3 {
-                    /* background: #037A16; */
-                    border: 2.5px solid #037A16;
-                }
-
-                .underline-4 {
-                    /* background: #FE8333; */
-                    border: 2.5px solid #FE8333;
-                }
-
-                .underline-5 {
-                    /* background: #46037A; */
-                    border: 2.5px solid #46037A;
-                }
-
-            
-           
         }
 
     }

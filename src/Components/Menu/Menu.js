@@ -22,30 +22,24 @@ function Menu({isHide, setIsHide}) {
 
                     <ul className="mevi-item">
                         <li className="item ">
-                            <p><a href="/">MEVI SHOP</a> </p>
-                            <div className="underline-1 line"></div>
+                            <a href="/" className='underline-1'>MEVI SHOP</a>  <p></p>
                         </li>
 
                         <li className="item ">
-                            <p><a href="/">MEVI EDUCATION</a></p>
-                            <div className="underline-2 line"></div>
+                            <a href="/" className='underline-2'>MEVI EDUCATION</a> <p></p>
                         </li>
 
                         <li className="item ">
-                            <p><a href="/">MEVI FARM</a></p>
-                            <div className="underline-3 line"></div>
+                            <a href="/" className='underline-3'>MEVI FARM</a> <p></p>
                         </li>
 
                         <li className="item ">
-                            <p><a href="/">MEVI FACTORY</a></p>
-                            <div className="underline-4 line"></div>
+                            <a href="/" className='underline-4'>MEVI FACTORY</a> <p></p>
                         </li>
 
                         <li className="item ">
-                            <p><a href="/">MEVI PLATFORM</a></p>
-                            <div className="underline-5 line"></div>
+                            <a href="/" className='underline-5'>MEVI PLATFORM</a> <p></p>
                         </li>
-
                     </ul>
 
                 </div>

@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
 export const ContainerNavigationButton = styled.div `
-    /* margin: 0;
-    padding: 0;
-    box-sizing: border-box; */
     position: fixed;
     top: 0;
     bottom: 0;
@@ -17,7 +14,6 @@ export const ContainerNavigationButton = styled.div `
 `
 
 export const NavigationButton = styled.div `
-    
     a {
         display: flex;
         color: #fff;
